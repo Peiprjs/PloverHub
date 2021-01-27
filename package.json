@@ -1,0 +1,23 @@
+{
+  "name": "ploverhub",
+  "version": "0.1.0",
+  "description": "Plover Bot!",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx nodemon"
+  },
+  "keywords": [
+    "Nodejs",
+    "Plover",
+    "Discord",
+    "bot"
+  ],
+  "author": "MenardWilson, Peipr, HelenKellerMD and FedoraSystems",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "fs": "0.0.1-security",
+    "random": "^2.2.0",
+    "trello": "^0.10.0"
+  }
+}
