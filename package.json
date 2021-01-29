@@ -16,7 +16,9 @@
   "license": "UNLICENSED",
   "dependencies": {
     "discord.js": "^12.5.1",
+    "express": "^4.17.1",
     "fs": "0.0.1-security",
+    "mongoose": "^5.11.13",
     "random": "^2.2.0",
     "trello": "^0.10.0"
   }
