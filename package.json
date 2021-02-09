@@ -1,27 +1,28 @@
 {
-  "name": "ploverhub",
-  "version": "0.1.0",
-  "description": "Plover Bot!",
+  "name": "PloverHub",
+  "version": "1.0.0",
+  "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "npx nodemon"
-  },
-  "keywords": [
-    "Nodejs",
-    "Plover",
-    "Discord",
-    "bot"
-  ],
-  "author": "MenardWilson, Peipr, HelenKellerMD and FedoraSystems",
-  "license": "UNLICENSED",
   "dependencies": {
     "discord.js": "^12.5.1",
     "express": "^4.17.1",
-    "fs": "0.0.1-security",
     "mongoose": "^5.11.13",
-    "random": "^2.2.0",
     "sequelize": "^6.5.0",
-    "sqlite3": "^5.0.1",
-    "trello": "^0.10.0"
-  }
+    "sqlite3": "^5.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Peiprjs/PloverHub.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Peiprjs/PloverHub/issues"
+  },
+  "homepage": "https://github.com/Peiprjs/PloverHub#readme"
 }
