@@ -2,6 +2,7 @@ module.exports = {
 	name: 'ping',
 	description: 'Ping!',
 	execute(message, args) {
-		message.channel.send('Pong.');
+    const timeTaken = Date.now() - message.createdTimestamp;
+    message.reply(`Pong! This message had a latency of ${timeTaken}ms. Not like it means anything to you...`);
 	},
 };

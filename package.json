@@ -10,6 +10,7 @@
     "mongoose": "^5.11.15",
     "sequelize": "^6.5.0",
     "sqlite3": "^5.0.1",
+    "trello": "^0.10.0",
     "wait": "^0.4.2"
   },
   "devDependencies": {},
