@@ -1,9 +1,9 @@
 X Make a team project in Discord Developer Portal
 - Make the Roblox part
-- Make the Discord part
+O Make the Discord part
 - Link both together
 - 10% price upgrade
-- Hire the server, when we consider it's ready
+O Hire the server, when we consider it's ready
       - SQlite database (included with hosting)
 - Make a failsafe
 - Make a copyright protection (No pay, no bot)
