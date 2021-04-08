@@ -1,8 +1,10 @@
-- Make a team project in Discord Developer Portal
+X Make a team project in Discord Developer Portal
 - Make the Roblox part
-- Make the Discord part
+O Make the Discord part
 - Link both together
 - 10% price upgrade
-- Hire the server, when we consider it's ready
+O Hire the server, when we consider it's ready
+      - SQlite database (included with hosting)
 - Make a failsafe
 - Make a copyright protection (No pay, no bot)
+X Trello API (705ff1182a16ae6109b2418f9432ab4c||c6cf497609fe547805855e470e3b2b976210aea7ed7e603d972eb41a15d88a59)
