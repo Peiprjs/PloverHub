@@ -5,11 +5,11 @@
   "main": "index.js",
   "dependencies": {
     "cli-progress": "^3.9.0",
-    "discord.js": "^12.5.1",
+    "discord.js": "^12.5.3",
     "express": "^4.17.1",
-    "mongoose": "^5.11.15",
-    "sequelize": "^6.5.0",
-    "sqlite3": "^5.0.1",
+    "mongoose": "^5.12.3",
+    "sequelize": "^6.6.2",
+    "sqlite3": "^5.0.2",
     "trello": "^0.10.0",
     "wait": "^0.4.2"
   },
