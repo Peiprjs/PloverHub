@@ -9,7 +9,8 @@ var Trello = require("trello");
 const bar1 = new cliProgress
 	.SingleBar({}, cliProgress.Presets
 		.shades_classic);
-console.log(`Loading assets...`);
+console.log(`Loading assets...
+`);
 bar1.start(100, 0);
 bar1.update(100);
 bar1.stop();
@@ -20,6 +21,14 @@ console.log(`
 |  ___/ |  __|  | | |  ___/ |  _  |   ⧹  /   
 | |     | |___  | | | |     | | | |   / /    
 |_|     |_____| |_| |_|     |_| |_|  /_/     
+ _   _   _   _   _____  
+| | | | | | | | |  _  ⧹ 
+| |_| | | | | | | |_| | 
+|  _  | | | | | |  _  { 
+| | | | | |_| | | |_| | 
+|_| |_| ⧹_____/ |_____/ 
+
+-------------DEBUG MODE INITIATED-------------
 `);
 console.log(
 	"Copyright 2020-2025 - Peiphy Industries LLC"
