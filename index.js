@@ -1,43 +1,30 @@
-///////////////////Required modules////////////////////
+/////////////////Required modules///////////////////
 const fs = require('fs');
 const Discord = require("discord.js");
 const config = require("./config.json");
 const cliProgress = require(
 	'cli-progress');
 var Trello = require("trello");
-////////////////////Startup////////////////////////////
+////////////////////Startup/////////////////////////
 const bar1 = new cliProgress
 	.SingleBar({}, cliProgress.Presets
 		.shades_classic);
-console.log(`
-Loading assets
-`);
+console.log(`Loading assets...`);
 bar1.start(100, 0);
 bar1.update(100);
 bar1.stop();
 console.log(`
-
-
-
-
-
-
-
-
-
-
-
  _____   _____   _   _____   _   _  __    __ 
-|  _  \ | ____| | | |  _  \ | | | | \ \  / / 
-| |_| | | |__   | | | |_| | | |_| |  \ \/ /  
-|  ___/ |  __|  | | |  ___/ |  _  |   \  /   
+|     ⧹ | ____| | | |  _  ⧹ | | | | ⧹ ⧹  / / 
+| |_| | | |__   | | | |_| | | |_| |  ⧹ ⧹/ /  
+|  ___/ |  __|  | | |  ___/ |  _  |   ⧹  /   
 | |     | |___  | | | |     | | | |   / /    
 |_|     |_____| |_| |_|     |_| |_|  /_/     
 `);
 console.log(
 	"Copyright 2020-2025 - Peiphy Industries LLC"
 );
-////////////Setting up a file command system///////////
+///////////File commands and client setup///////////
 const client = new Discord.Client({
 	ws: {
 		properties: {
@@ -59,8 +46,8 @@ for (const file of commandFiles) {
 	client.commands.set(command.name,
 		command);
 }
-///////////////////////Login///////////////////////////
-const prefix = "!";
+///////////////////////Login////////////////////////
+const prefix = "p!";
 client.on('ready', () => {
 	console.log(
 		`Logged in as ${client.user.tag}!`
@@ -74,7 +61,7 @@ client.on('ready', () => {
 		.then(console.log)
 		.catch(console.error);
 });
-//////////////File command checker/////////////////////
+///////////////File command checker/////////////////
 client.on('message', message => {
 	if (!message.content
 		.startsWith(prefix) ||
@@ -86,11 +73,16 @@ client.on('message', message => {
 		.trim().split(/ +/);
 	const command = args.shift()
 		.toLowerCase();
-	
+////////////////7//////Commands/////////////////////
 	if (command === 'ping') {
 		client.commands.get(
 			'ping').execute(
 			message, args);
-	}
-	
+	};
+	if (command === 'help') {
+		client.commands.get(
+			'help').execute(
+			message, args);
+	};
+
 });
