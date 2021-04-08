@@ -1,6 +1,6 @@
 /Logins and stuff/
 const Discord = require("discord.js");
-const config = ("Nzc2NDA4OTU0OTQyNjUyNDc2.X60dLw.eCtaGYUBx00z5Jc09wpn_6ol9l0");
+const config = ([BotToken]);
 const client = new Discord.Client();
 const random = require('random');
 const prefix = (",");
