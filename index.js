@@ -6,20 +6,39 @@ const cliProgress = require('cli-progress');
 var Trello = require("trello");
 ////////////////////Startup////////////////////////////
 const bar1 = new cliProgress.SingleBar({}, cliProgress.Presets.shades_classic);
-console.log("Loading assets")
+console.log("Loading assets");
 bar1.start(100, 0);
 bar1.update(100);
 bar1.stop();
-console.log(`  _____     _       _           _    _       _     
- |  __ \   (_)     | |         | |  | |     | |    
- | |__) |__ _ _ __ | |__  _   _| |__| |_   _| |__  
- |  ___/ _ \ | '_ \| '_ \| | | |  __  | | | | '_ \ 
- | |  |  __/ | |_) | | | | |_| | |  | | |_| | |_) |
- |_|   \___|_| .__/|_| |_|\__, |_|  |_|\__,_|_.__/ 
-             | |           __/ |                   
-             |_|          |___/                    
+console.log(`
 
-`)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ _____   _____   _   _____   _   _  __    __ 
+|  _  \ | ____| | | |  _  \ | | | | \ \  / / 
+| |_| | | |__   | | | |_| | | |_| |  \ \/ /  
+|  ___/ |  __|  | | |  ___/ |  _  |   \  /   
+| |     | |___  | | | |     | | | |   / /    
+|_|     |_____| |_| |_|     |_| |_|  /_/     
+`);
 console.log("Copyright 2020-2025 - Peiphy Industries LLC");
 ////////////Setting up a file command system///////////
 const client = new Discord.Client({ ws: { properties: { $browser: "Discord iOS" } }});
