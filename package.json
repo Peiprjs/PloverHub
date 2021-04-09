@@ -8,6 +8,7 @@
     "discord.js": "^12.5.3",
     "express": "^4.17.1",
     "mongoose": "^5.12.3",
+    "random": "^3.0.3",
     "sequelize": "^6.6.2",
     "sqlite3": "^5.0.2",
     "trello": "^0.10.0",

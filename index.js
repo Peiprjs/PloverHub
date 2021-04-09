@@ -2,9 +2,17 @@
 const fs = require('fs');
 const Discord = require("discord.js");
 const config = require("./config.json");
+const random = require('random')
 const cliProgress = require(
 	'cli-progress');
 var Trello = require("trello");
+function sleep(milliseconds) {
+  const date = Date.now();
+  let currentDate = null;
+  do {
+    currentDate = Date.now();
+  } while (currentDate - date < milliseconds);
+}
 ////////////////////Startup/////////////////////////
 const bar1 = new cliProgress
 	.SingleBar({}, cliProgress.Presets
@@ -13,6 +21,17 @@ console.log(`
 Loading assets...
 `);
 bar1.start(100, 0);
+var sloop = random.int((min = 250), (max = 500))
+sleep(sloop);
+bar1.update(25);
+var sloop = random.int((min = 400), (max = 1000))
+sleep(sloop);
+bar1.update(50);
+var sloop = random.int((min = 300), (max = 1000))
+sleep(sloop);
+bar1.update(99);
+var sloop = random.int((min = 500), (max = 2000))
+sleep(sloop);
 bar1.update(100);
 bar1.stop();
 console.log(`
