@@ -9,7 +9,8 @@ var Trello = require("trello");
 const bar1 = new cliProgress
 	.SingleBar({}, cliProgress.Presets
 		.shades_classic);
-console.log(`Loading assets...
+console.log(`
+Loading assets...
 `);
 bar1.start(100, 0);
 bar1.update(100);
@@ -28,11 +29,10 @@ console.log(`
 | | | | | |_| | | |_| | 
 |_| |_| ⧹_____/ |_____/ 
 
+Peiphy Industries LLC - Copyright 2020-2025
+
 -------------DEBUG MODE INITIATED-------------
 `);
-console.log(
-	"Copyright 2020-2025 - Peiphy Industries LLC"
-);
 ///////////File commands and client setup///////////
 const client = new Discord.Client({
 	ws: {
@@ -83,15 +83,25 @@ client.on('message', message => {
 	const command = args.shift()
 		.toLowerCase();
 ////////////////7//////Commands/////////////////////
+//////All commands  are fraccionated in ./cmds//////
+//-------------------------------//
 	if (command === 'ping') {
 		client.commands.get(
 			'ping').execute(
 			message, args);
 	};
+//-------------------------------//
 	if (command === 'help') {
 		client.commands.get(
 			'help').execute(
 			message, args);
 	};
+//-------------------------------//
+		if (command === 'login') {
+		client.commands.get(
+			'login').execute(
+			message, args);
+	};
+//-------------------------------//
 
 });
