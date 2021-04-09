@@ -77,6 +77,7 @@ for (const file of commandFiles) {
 ///////////////////////Login////////////////////////
 const prefix = "p!";
 client.on('ready', () => {
+	sleep(1500);
 	console.log(
 		`Logged in as ${client.user.tag}!`
 	);
